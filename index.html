@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Communication Week</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<meta name="keywords" content="ajax,jquery,jquery plugins,master multimedia,yahoo widget,web applications" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen" maximum-scale="1">
+<link href="comstyle2.css" rel="stylesheet" media="screen">
+<link type="text/css" rel="stylesheet" href="themes/base.css"/>
+<link type="text/css" rel="stylesheet" href="themes/default/theme2.css"/>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery.accessible-news-slider.js"></script>
+
+
+<script type="text/javascript">
+// when the DOM is ready, convert the feed anchors into feed content
+jQuery(document).ready(function() {
+	
+	jQuery('#newsslider').accessNews({
+	
+	});
+
+	jQuery('#newsslider2').accessNews({
+		title : "BREAKING NEWS:",
+		subtitle:"stories from the internet",
+		speed : "slow",
+		slideBy : 5,
+		slideShowInterval: 100000,
+		slideShowDelay: 100000
+	});
+
+}); 
+			window.onscroll=function(){
+    			
+    			var x;
+
+    			if (document.body.offsetTop > 0)
+    			 {
+    			 	x = document.body.offsetTop;
+    			 	alert("this");
+    			 }
+    			else if (window.pageYOffset >= 0) 
+    				{
+    					x = window.pageYOffset;
+    				}
+
+    			
+    			if (x > 0) 
+    				{
+      					$("#bothbars").addClass("fixed")
+      					
+    				}
+    			else 
+    			 {
+    			 		$("#bothbars").removeClass("fixed")
+    			 		
+    			 }
+
+    			 if (x > 380 )
+    			 {
+    			 	
+    			 	$('#mynavbar2').addClass('fixed2')
+
+    			 }
+
+    			 else
+    			 {
+    			 	$('#mynavbar2').removeClass("fixed2")
+    			 }
+
+    			 
+    		}
+</script>
+</head>
+<body>
+<div class="row-fluid">
+	<div class="span12">
+				<div id="bothbars" class="row"data-spy="affix" data-offset-top="1">
+ 					<div id="mynavbar">
+                        <a href="#"><img src="img/homeicon (Custom).jpg"> Home</a>
+                        <a href="#">News</a>
+                        <a href="#">E-Business </a>
+                        <a href="#">Telecoms</a>
+                        <a href="#">E-finance</a>
+                        <a href="#">E-Guest</a>
+                        <a href="#">Broadcasting</a>
+                        <a href="#">Logistics</a>
+                        <a href="#">Other-Business</a>
+                        <a href="#">ICT</a>        
+                    </div> <!--End of first navbar-->
+
+                    <div class="span12" style="padding-top:10px; padding-bottom:10px;">
+                    	<div class="row">
+	                    			<div class="span2"><a href="#"><img src="img/comsweekc.png"></a>
+	                    			</div>
+                        
+		                            <div class="span6 pull-left" style="">
+
+		                                    <form class="navbar-form ">
+
+		                                                <input type="text" style="width:87%;">
+		                                                <button id="mbtn" type="submit" class="btn btn-primary">Search</button>
+		                                     </form>
+		                            </div>
+
+                                    <div class="span3" style=""> 
+                                        
+                                        <a href="#">About Us</a> &nbsp;&nbsp;
+                                        <a href="#">Contact Us</a> &nbsp;&nbsp;
+                                        <a href="#">Advertise</a>
+
+                                    </div>
+                    	</div>
+
+                    </div>
+                  </div>  	
+                </div><!--End of navbarmine-->
+   	<div class="row">
+				<div  class="span2 hidden-phone hidden-tablet" id="mysidebar">
+                        <div>
+                                        <ul class="unstyled">
+                                            <li><a href="#" class="active"><h5> <img src="img/message-32c (Custom).png" /> Mail</h5> </a></li>
+                                                <li><a href="#"><h5><img src="img/newspaper-10-32 (Custom).png"/> News</h5> </a></li>
+                                                <li><a href="#"><h5><img src="img/soccer-3-32c (Custom).png"/> Sports</h5> </a></li>
+                                              
+                                                <li><a href="#"><h5><img src="img/sun-2-32c (Custom).png"/> Weather</h5> </a></li>
+                                               
+                                                <li><a href="#"><h5><img src="img/poll-topic-32c (Custom).png"/> Forums</h5> </a></li>
+                                                <li><a href="#"><h5><img src="img/video-play-2-32c (Custom).png"/> Video</h5> </a></li>
+                                                <li><a href="#"><h5><img src="img/picture-attachment-32 (Custom).png"/> Pictures</h5> </a></li>
+                                                <li><a href="#"><h5><img src="img/baggage-32 (Custom).png"/> Jobs</h5> </a></li>
+                                                                                                
+                                                <a href="#" style="font-size:10px;"> More Sites >> </a>
+
+                                        </ul>
+                        </div>
+                       
+
+			                <button class="btn btn-large btn-primary" type="button" id="boxes">
+			                    Click here for more information
+                            </button>
+                            <div style="margin-top:22px;">
+                            <a href="#"><img src="img/eti.jpg" /> </a>
+                            </div>
+                            <div style="margin-top:22px;">
+                            <a href="#"><img src="img/c.jpg" /> </a>
+                            </div>
+                        
+                </div><!-- end of BODY sidebar -->
+
+
+<noscript><strong>Please Note:</strong> You may have disabled JavaScript and/or CSS. Although this news content will be accessible, certain functionality is unavailable.</noscript>
+	<div class="span6 row" >
+	<ul id="newsslider" class="">
+		<li>
+			<a href="#"><img src="graphics/d2.jpg" width="82" height="30" alt="Luca Farulli" /></a>
+			<h3><a href="#">Luca Farulli interview</a></h3>
+			<p>Luca Farulli, professor of Aesthetics at the Academy of Fine Arts of Venice, is the owner of the course of aesthetics of digital art and coordinator of the workshop for the Master of Arts and Multimedia <br /><a href="#"> &raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d3.jpg" width="82" height="30" alt="Diego Mencarelli" /></a>
+			<h3><a href="#" title="This should be the title text">Diego Mencarelli interview</a></h3>
+			<p>Diego Mencarelli, new media consultant at Unicoop Tirreno, co-teaches a course on human-machine interface design, in particular the module dedicated to accessibility and web W3C standards <br /><a href="#">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a class="title" href="#"><img src="graphics/d22.jpg" width="82" height="30" alt="Luca Bonacorsi" /></a>
+			<h3><a href="#">Luca Bonacorsi interview</a></h3>
+			<p>Luca Bonacorsi, consultant and expert training certified Adobe / Macromedia, is professor of Rich Internet Applications II, a course designed to learn of Adobe Flex <br /><a href="#">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a  href="#"><img src="graphics/d4.jpg" width="82" height="30" alt="Luigi Ciorciolini" /></a>
+			<h3><a href="#">Luigi Ciorciolini interview</a></h3>
+			<p>Luigi Ciorciolini, film and video maker, since different editions of the course is a professor of communication by images in the period of specialization in video post-production<br /><a href="#">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d5.jpg" width="82" height="30" alt="Luca Rosati" /></a>
+			<h3><a href="#">Luca Rosati interview.</a></h3>
+			<p>Luca Rosati is one of the leading experts on information architecture in Italy. Since two years is among the organizers of the Italian IA Summit and teaches a course on Information Architecture at the Master <br /><a href="#">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d6.jpg" width="82" height="30" alt="Filippo Casale" /></a>
+			<h3><a href="#">Filippo Casale interview</a></h3>
+			<p>Filippo Casale is a professor of Maya from the first edition of the Master. Instructor certified for Autodesk Maya software, Filippo is one of the most successful 3D artist on the italian scene <br /><a href="#">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d7.jpg" width="82" height="30" alt="Tiziano Fruet" /></a>
+			<h3><a href="#">Tiziano Fruet interview</a></h3>
+			<p>Tiziano Fruet is the new teacher of the course of Graphic Design II at the Master. Tiziano is Adobe Italy Guru  since 2004, Adobe Certified Expert and Adobe Certified Instructor in Photoshop, Illustrator and Freehand <br /><a href="#">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d8.jpg" width="82" height="30" alt="Sante J. Achille" /></a>
+			<h3><a href="#">Sante J. Achille interview</a></h3>
+			<p>Sante J. Achilles is two years teaches a course on Search Engine Optimization. Sante is a professional with national and international experience in consulting for the search engines and web marketing <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-sante-j-achille">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d9.jpg" width="82" height="30" alt="Luca Farulli" /></a>
+			<h3><a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli">Luca Farulli interview</a></h3>
+			<p>Luca Farulli, professor of Aesthetics at the Academy of Fine Arts of Venice, is the owner of the course of aesthetics of digital art and coordinator of the workshop for the Master of Arts and Multimedia <br /><a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli"> &raquo; read more</a></p>
+		</li>
+		<li>
+			<a href=""><img src="graphics/d10.jpg" width="82" height="30" alt="Diego Mencarelli" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli" title="This should be the title text">Diego Mencarelli interview</a></h3>
+			<p>Diego Mencarelli, new media consultant at Unicoop Tirreno, co-teaches a course on human-machine interface design, in particular the module dedicated to accessibility and web W3C standards <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a class="title" href=""><img src="graphics/d11.jpg" width="82" height="30" alt="Luca Bonacorsi" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-bonacorsi">Luca Bonacorsi interview</a></h3>
+			<p>Luca Bonacorsi, consultant and expert training certified Adobe / Macromedia, is professor of Rich Internet Applications II, a course designed to learn of Adobe Flex <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-bonacorsi">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a  href=""><img src="graphics/d12.jpg" width="82" height="30" alt="Luigi Ciorciolini" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-luigi-ciorciolini">Luigi Ciorciolini interview</a></h3>
+			<p>Luigi Ciorciolini, film and video maker, since different editions of the course is a professor of communication by images in the period of specialization in video post-production<br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-luigi-ciorciolini">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href=""><img src="graphics/d13.jpg" width="82" height="30" alt="Luca Rosati" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-rosati">Luca Rosati interview.</a></h3>
+			<p>Luca Rosati is one of the leading experts on information architecture in Italy. Since two years is among the organizers of the Italian IA Summit and teaches a course on Information Architecture at the Master <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-luca-rosati">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d14.jpg" width="82" height="30" alt="Filippo Casale" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-filippo-casale">Filippo Casale interview</a></h3>
+			<p>Filippo Casale is a professor of Maya from the first edition of the Master. Instructor certified for Autodesk Maya software, Filippo is one of the most successful 3D artist on the italian scene <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-filippo-casale">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href=""><img src="graphics/d15.jpg" width="82" height="30" alt="Tiziano Fruet" /></a>
+			<h3><a href="http://www.mmm.unifi.it/news/intervista-con-tiziano-fruet">Tiziano Fruet interview</a></h3>
+			<p>Tiziano Fruet is the new teacher of the course of Graphic Design II at the Master. Tiziano is Adobe Italy Guru  since 2004, Adobe Certified Expert and Adobe Certified Instructor in Photoshop, Illustrator and Freehand <br /><a href="http://www.mmm.unifi.it/news/intervista-con-tiziano-fruet">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href=""><img src="graphics/d17.jpg" width="82" height="30" alt="Sante J. Achille" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-sante-j-achille">Sante J. Achille interview</a></h3>
+			<p>Sante J. Achilles is two years teaches a course on Search Engine Optimization. Sante is a professional with national and international experience in consulting for the search engines and web marketing <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-sante-j-achille">&raquo; read more</a></p>
+		</li>
+		<li>
+			<a href=""><img src="graphics/d18.jpg" width="82" height="30" alt="Luca Farulli" /></a>
+			<h3><a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli">Luca Farulli interview</a></h3>
+			<p>Luca Farulli, professor of Aesthetics at the Academy of Fine Arts of Venice, is the owner of the course of aesthetics of digital art and coordinator of the workshop for the Master of Arts and Multimedia <br /><a href="http://www.mmm.unifi.it/primo-piano/intervista-con-luca-farulli"> &raquo; read more</a></p>
+		</li>
+		<li>
+			<a href="#"><img src="graphics/d19.jpg" width="82" height="30" alt="Diego Mencarelli" /></a>
+			<h3><a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli" title="This should be the title text">Diego Mencarelli interview</a></h3>
+			<p>Diego Mencarelli, new media consultant at Unicoop Tirreno, co-teaches a course on human-machine interface design, in particular the module dedicated to accessibility and web W3C standards <br /><a href="http://www.mmm.unifi.it/interviste/intervista-con-diego-mencarelli">&raquo; read more</a></p>
+		</li>
+	</ul>
+
+	<div style="border:1px solid #c5c5c5;" >
+                                    <div id="mynavbar2" >
+                                        <ul class="unstyled inline">
+                                                
+                                                <li><a href="#">News </a></li>
+                                                <li><a href="#">Entertainment</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Business</a></li>
+                                                <li><a href="#">More<b class="caret"></b></a></li>
+                                        </ul>
+                                        
+                                    </div>
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/lamido.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Worries over Arrests of Top Bankers for Alleged Terrorist Financing -</a>
+                                                <p>The banking industry and State Security Service (SSS) are embroiled in claims and denials over the continued detention of senior personnel of 13 Nigerian banks for alleged terrorist financing and -.<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/yemi.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">World Bank Pledges Support to Nigeria Data System </a>
+                                                <p> Alain Gaugris, a Senior Statistician, World Bank, has expressed the commitment of the Bank to supporting and positioning Nigerian Statistical System (NSS) to enable it contribute meaningfully to the national Transformation Agenda....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+                                   <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+									
+									<div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+		  								
+                                   <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/samsung.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Samsung Africa Targets 20m Smartphone Sales in 2014 -</a>
+                                                <p> Samsung Electronics one of the leading Smartphone manufacturers, has disclosed plans to supply half of the estimated 20 million smartphones to be sold on the continent this year with the intention of doubling sales in 2014....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+
+                              				<div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/goni.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">FG Tasks Civil Servants on ICT</a>
+                                                <p> Federal government has urged civil servants in the country to acquire Information and Communication Technology (ICT) skills....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+                                   <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/jega.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Oppositions Ask FG to Account for Missing $5Bn.</a>
+                                                <p> Opposition parties have challenged the federal government to account for the $5 billion, which has reportedly disappeared from the nation’s Excess Crude Account (ECA) ....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>   
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                    </div>
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>   
+
+                              		<div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/goni.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">FG Tasks Civil Servants on ICT</a>
+                                                <p> Federal government has urged civil servants in the country to acquire Information and Communication Technology (ICT) skills....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>   
+ 
+
+  
+
+ 
+                            </div> 
+</div><!-- End of span6-->
+	<div class="span3 hidden-phone hidden-tablet">
+							<div class="row-fluid">
+
+									 				<div  class="work1">
+			                                               <div class="lastheader"> Trending now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Watch Videos</a> </div>
+			                                                <ol>
+			                                                    <li><span class="bld"><a href="#">Goats</a></span></li>
+			                                                    <li><span class="bld"><a href="#">Sheep</a></span></li>
+			                                                    <li><span class="bld"><a href="#">Cow</a></li>
+			                                                    <li><span class="bld"><a href="#">Tiger</a></span></li> 
+			                                                    <li><span class="bld"><a href="#">Goats</a></span></li>
+			                                                    <li><span class="bld"><a href="#">Lion</a></span></li>
+			                                                </ol>
+			                                        </div>
+			                                        <!--End of Trending-->
+			                <div class="work2">
+			                   <img src="img/dna.jpg">
+			                </div>
+
+											<div class="work1">
+												<div>
+	                                              <h4 style="font-weight:bolder"> Lagos<img src="img/map2.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/cloud3.jpg"></h4>
+	                                                                                          
+		                                                                               
+		                                             <span style="font-size:35px;">88
+		                                              <span style="font-size:25px;"> <sup> <sup>o</sup>F &nbsp;&nbsp; Partly cloudy</sup>
+
+		                                              </span>
+		                                             </span> 
+	                                         	</div>
+                                    			
+                                    			 
+	                                               <table width="100" id="bd">
+	                                                <tr>
+	                                                    <td width="50"><img src="img/cloud.jpg" height="40" width="46"></td>
+	                                                    <td width="20"><img src="img/cloud.jpg" height="40" width="47"></td>
+	                                                    <td width="20"><img src="img/cloud.jpg" height="45" width="41"></td>
+	                                                </tr>
+
+	                                                <tr>
+	                                                    <td>Today</td>
+	                                                    <td>Tomorrow</td>
+	                                                    <td>Monday</td>
+	                                                </tr>
+
+	                                                <tr>
+	                                                <td>21<sup>o</sup>F</td>
+	                                                <td>21<sup>o</sup>F</td>
+	                                                <td>21<sup>o</sup>F</td>
+	                                                </tr>
+                                   			  </table>
+                                      			
+
+                                    		</div><!--End of Weather-->
+
+                                    		<div class="work1">
+                                                 <div class="lastheader" style="font-weight:bolder; font-size:16px;"> Quotes <a href="#"> Finance</a></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div>
+                                                  <table>
+                                                      <tr>
+                                                        <td width="125"><a href="#">S&P 500</a></td>
+                                                        <td width="71">1,000.342</td>
+                                                        <td width="71"><a href="#">7.2% </a> </td>
+                                                      </tr>  
+
+                                                       <tr>
+                                                        <td width="125"><a href="#">NASDQ</a></td>
+                                                        <td width="71">1,765.472</td>
+                                                        <td width="71"><a href="#">3.9%</a></td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td width="125"><a href="#">Transcorp</a></td>
+                                                        <td width="71">2,768.657</td>
+                                                        <td width="71"><a href="#">1.7% </a> </td>
+                                                      </tr> 
+
+                                                      <tr>
+                                                        <td width="125"><a href="#">HDS GROUP</a></td>
+                                                        <td width="71">1,000.342</td>
+                                                        <td width="71"><a href="#">7.2% </a> </td>
+                                                      </tr>   
+                                                  </table>
+                                                  	<div>&nbsp;</div>
+
+                                                  <input type="text" placeholder="Enter Company/ticker" style="width:90%">
+                                                  </div>
+                                            </div><!--End of Finanace-->
+
+                                    <div class="work1">
+                                    	<div class="span12">
+                                    	  <div class="row-fluid">
+                                            <div class="lastheader"> <b style="font-size: 15px;">SPORTS </b> <a href="#"> Yahoo! Sports</a>
+                                            </div>
+                                                                                       
+                                            <div class="sports"> 
+                                             	<div class="span4">NBA</div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-right:5px;"><a href="#"><img src="img/manu (Custom).png"></a></div>
+                                             	<div class="span1 pull-left" id="scores" style="margin-left:0"><a href="#"> SAC &nbsp;&nbsp;&nbsp;&nbsp;91</a></div>
+                                             		<div class="span1">&nbsp;</div>
+                                             	<div class="span1" id="scores"><a href="#">POR 104</a></div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-left:15px;"> <a href="#"><img src="img/manu (Custom).png"></a></div> 
+                                            	                                            	 
+                                            </div>
+                                            
+                                            <div class="sports"> 
+                                             	<div class="span4">NBA</div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-right:5px;"><a href="#"><img src="img/arsenal.jpg"></a></div>
+                                             	<div class="span1 pull-left" id="scores" style="margin-left:0"><a href="#"> DEN &nbsp;&nbsp;&nbsp;&nbsp;103</a></div>
+                                             		<div class="span1">&nbsp;</div>
+                                             	<div class="span1" id="scores"><a href="#">PHO 114</a></div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:35px; margin-left:15px;"> <a href="#"><img src="img/chelsea.jpg"></a></div> 
+                                            	                                            	 
+                                            </div>
+
+                                            <div class="sports"> 
+                                             	<div class="span4">NFL</div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-right:5px;"><a href="#"><img src="img/manu (Custom).png"></a></div>
+                                             	<div class="span1 pull-left" id="scores" style="margin-left:0"><a href="#"> WAS &nbsp;&nbsp;&nbsp;&nbsp;27</a></div>
+                                             		<div class="span1"></div>
+                                             	<div class="span1" id="scores"><a href="#">MIN 34</a></div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-left:15px;"> <a href="#"><img src="img/manu (Custom).png"></a></div> 
+                                            	                                            	 
+                                            </div>
+
+
+                                            <!--Those to be underlined-->
+                                     	  </div>
+                                     	</div>
+                                    </div>
+                                            
+
+
+                                    <!--        <div class="work2">
+                                                 <span class="lastheader"><b style="font-size: 15px;">SPORTS </b> <a href="#"> Yahoo! Sports</a>
+                                                 </span>
+                                                  <div>&nbsp;</div>
+                                                  <div>&nbsp;</div>
+                                                  <div>
+                                                  <table class="table table-condensed">
+                                                      <tr>
+                                                        <td width="90"><h5><a href="#">Premiership</a> </h5></td>
+                                                        
+                                                       <td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr>  
+
+                                                       <tr>
+	                                                        <td width="90"><h5><a href="#">LA LIGA</a></h5></td>
+	                                                        
+	                                                         <td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td width="90"><h5><a href="#">Champions League</a></h5></td>
+                                                        
+                                                         <td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr> 
+
+                                                      <tr>
+                                                        <td width="90"><h5><a href="#">Bungdelisa</a></h5></td>
+                                                        
+                                                        	<td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr>   
+                                                  </table>                                                  
+                                                  </div>
+                                                </div><!--End of Sports -->
+                                     
+
+                                                <div class="work2">
+	                                            <h5 class="lastheader">Featured Videos<b class="xz"><a href="#"> 
+	                                            	From Youtube,Vclip,etc</a></b>
+	                                            </h5>
+	                                        <div>
+													
+													<table id="table2">	                                           
+			                                        <tr> 
+			                                           <td width="100">
+				                                           	<div ><img src="img/vid1.jpg" width="150" height="90">
+								                            </div>
+								                            <div><a href="#" class="vidtext"> Video of the world peagent 
+								                            </a>
+								                            </div>
+			                                           	</td>
+			                                            <td width="100">
+                                                            <div ><img src="img/vid2.jpg" width="150" height="90">
+                                                            </div>
+                                                            <div><a href="#" class="vidtext"> Video of the world peagent 
+                                                            </a>
+                                                            </div>
+                                                        </td>
+			                                        </tr>
+			                                        
+			                                        <tr >	                                           
+				                                          <td width="100">
+                                                            <div ><img src="img/d (Custom).jpg" width="150" height="90">
+                                                            </div>
+                                                            <div><a href="#" class="vidtext"> Video of the world peagent 
+                                                            </a>
+                                                            </div>
+                                                        </td>
+				                                         <td width="100">
+                                                            <div ><img src="img/vid3.jpg" width="150" height="90">
+                                                            </div>
+                                                            <div><a href="#" class="vidtext"> Video of the world peagent 
+                                                            </a>
+                                                            </div>
+                                                        </td>
+			                                        </tr>
+			                       					<input type="text" placeholder="Search Video">
+			                                   </table>
+			                                </div><!--End of videoitem list-->
+                                            	
+                                        </div>
+
+                                                 <div class="work">
+                                                	<img src="img/gtb3.jpg">
+                                            	</div>
+                                                                          
+                                        
+                                            <div>
+                                                <img src="img/DATA-CENTRE-ad-2x.jpg">
+                                            </div>
+                                    
+
+						
+							</div><!-- End of row-fluid-->
+				
+			</div><!--End of Span3 -->
+
+</div><!--End of boy content-->
+</div><!--Everything-->	
+
+
+
+</body>
+</html>
