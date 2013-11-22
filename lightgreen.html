@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Communication Week</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<meta name="keywords" content="ajax,jquery,jquery plugins,master multimedia,yahoo widget,web applications" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" maximum-scale="1">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen" maximum-scale="1">
+
+<link href="comstyle3.css" rel="stylesheet" media="screen">
+<link type="text/css" rel="stylesheet" href="themes/base.css"/>
+<link type="text/css" rel="stylesheet" href="themes/default/theme2.css"/>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery.accessible-news-slider.js"></script>
+
+
+<script type="text/javascript">
+// when the DOM is ready, convert the feed anchors into feed content
+jQuery(document).ready(function() {
+	
+	jQuery('#newsslider').accessNews({
+	
+	});
+
+	jQuery('#newsslider2').accessNews({
+		title : "BREAKING NEWS:",
+		subtitle:"stories from the internet",
+		speed : "slow",
+		slideBy : 5,
+		slideShowInterval: 100000,
+		slideShowDelay: 100000
+	});
+
+}); 
+			window.onscroll=function(){
+    			
+    			var x;
+
+    			if (document.body.offsetTop > 0)
+    			 {
+    			 	x = document.body.offsetTop;
+    			 	alert("this");
+    			 }
+    			else if (window.pageYOffset >= 0) 
+    				{
+    					x = window.pageYOffset;
+    				}
+
+    			
+    			if (x > 0) 
+    				{
+      					$("#bothbars").addClass("fixed")
+                        //$("#mysidebar").addClass("sidebarfix")
+                        $("#mainbody").css({'border':'1px solid #00CC00',})
+                        $("#mainbody").addClass("movebody")
+      					
+    				}
+    			else 
+    			 {
+    			 		$("#bothbars").removeClass("fixed")
+    			 		//$("#mysidebar").removeClass("sidebarfix")
+                        $("#mainbody").css({'border':'0px solid blue',})
+                        $('#mainbody').removeClass("movebody")
+    			 }
+
+    			 
+
+    			 
+    		}
+</script>
+</head>
+<body>
+    <div >
+                <div id="bothbars" class="row" data-spy="affix" data-offset-top="1">
+                    <div id="mynavbar">
+                        <a href="#"><img src="img/homeicon (Custom).jpg"> Home</a>
+                        <a href="#">News</a>
+                        <a href="#">E-Business </a>
+                        <a href="#">Telecoms</a>
+                        <a href="#">E-finance</a>
+                        <a href="#">E-Guest</a>
+                        <a href="#">Broadcasting</a>
+                        <a href="#">Logistics</a>
+                        <a href="#">Other-Business</a>
+                        <a href="#">ICT</a>        
+    </div> <!--End of first navbar-->
+
+                    <div  style="padding-top:10px; padding-bottom:10px; width:100%;">
+                        <div class="row-fluid">
+                                    <div class="span2"><a href="#"><img src="img/comsweekc.png"></a>
+                                    </div>
+                        
+                                    <div class="span7 pull-left" style="padding-left:12px;">
+
+                                            <form class="navbar-form ">
+
+                                                        <input type="text" style="width:76.4%;">
+                                                        <button id="mbtn" type="submit" class="btn btn-primary">Search</button>
+                                             </form>
+                                    </div>
+
+                                    <div class="span3" style="margin-left:-15px;"> 
+                                        
+                                       <a href="#">About Us</a> &nbsp;&nbsp;
+                                        <a href="#">Contact Us</a> &nbsp;&nbsp;
+                                        <a href="#">Advertise</a>
+                                    </div>
+                        </div>
+                    </div>
+                    
+    </div><!--End of navbarmine-->
+<div class="row-fluid">
+	
+    <div class="row">
+						<div  class="span2 hidden-phone hidden-tablet" id="mysidebar">
+								<div>
+												<ul class="unstyled">
+													<li><a href="#" class="active"><h5> <img src="img/message-32c (Custom).png" /> Mail</h5> </a></li>
+														<li><a href="#"><h5><img src="img/newspaper-10-32 (Custom).png"/> News</h5> </a></li>
+														<li><a href="#"><h5><img src="img/soccer-3-32c (Custom).png"/> Sports</h5> </a></li>
+													  
+														<li><a href="#"><h5><img src="img/sun-2-32c (Custom).png"/> Weather</h5> </a></li>
+													   
+														<li><a href="#"><h5><img src="img/poll-topic-32c (Custom).png"/> Forums</h5> </a></li>
+														<li><a href="#"><h5><img src="img/video-play-2-32c (Custom).png"/> Video</h5> </a></li>
+														<li><a href="#"><h5><img src="img/picture-attachment-32 (Custom).png"/> Pictures</h5> </a></li>
+														<li><a href="#"><h5><img src="img/baggage-32 (Custom).png"/> Jobs</h5> </a></li>
+																										
+														<a href="#" style="font-size:10px;"> More Sites >> </a>
+		
+												</ul>
+								</div>
+							   
+		
+									<button class="btn btn-large btn-primary" type="button" id="boxes">
+										Click here for more information
+									</button>
+									<div style="margin-top:22px;">
+									<a href="#"><img src="img/eti.jpg" /> </a>
+									</div>
+									<div style="margin-top:22px;">
+									<a href="#"><img src="img/c.jpg" /> </a>
+									</div>
+								
+						</div><!-- end of BODY sidebar span2 -->
+
+
+
+
+	<div class="span6 row " style="" id="mainbody">
+        <div class="newsbody">
+				<div>
+					<h3>
+					African Exchange Holdings Delivers on Receipts System 
+					</h3>
+					<div><em>Caption of Story comes here.....</em></div>
+					<div>By Cwadmin</div>
+					<div style="font-size:10px"> 10hrs ago</div>
+				</div>
+
+				<div class="cap_picture">
+					<img src="img/All-SEC-Commissioners-at-project-50_1.jpg">
+				</div>
+
+				<div class="picdetails" style="height:10px; border:1px solid #fofofo; ">
+					
+				</div>
+
+			<div class="story">
+					<p>
+						Nigerian Strategic Grain Reserve (SGR) and Federal Ministry of Agriculture and Rural Development (FMARD) have conducted a technical walkthrough of a pioneering electronic warehouse receipt platform deployed by Africa Exchange Holdings (AFEX), which enables Nigerian farmers, cooperatives and traders to safely store their produce at accredited warehouses and access financing.
+					</p>
+					<p>Within two months of signing an MOU with FMARD, AFEX has commenced operations of the Warehouse Receipt System – a record speed in public private partnerships.
+					AFEX is the pan-African commodity exchange company founded by Tony O. Elumelu, chairman of Heirs Holdings; Nicolas Berggruen, chairman of Berggruen Holdings;  and Jendayi Frazer, President of 50 Ventures, which was started to establish commodity exchanges across Africa.
+					</p>
+					<p>When fully operational, the new warehousing project will significantly reduce the risk of lending to stakeholders in the agriculture sector, by providing secure storage and real time online tracking of warehouse receipts; increasing speed and reducing transaction costs.
+					</p>
+					<p>
+					Commenting to the media, Tim Shortley, chief operating officer, AFEX, said, “The timing for the project is ideal because trading and storing of harvested commodities just started and the system is ready. We have launched the system in the northwest region of Nigeria; however, we plan to scale across other states in 2014 so farmers across Nigeria can feel the benefits of the warehousing project. We hope that agricultural commodities in excess of N10 billion will be financed this season.”
+					</p>
+					<p>Dr Jide Olumeko, director of the SGR said, “We are already seeing evidence of how this system is helping our farmers reduce post-harvest losses. Today’s demonstration shows that we have chosen the right partners in AFEX.”
+					</p>
+				<div class="row" style="padding-left:20px;">
+					<div class="span3" >
+						<img src="img/gtb.jpg" >
+						
+					</div>
+
+					<div class="span9">	
+						<p>The two-year pilot phase of the warehouse receipt system covers seven states, mostly in northern Nigeria, where agriculture is by far the largest economic sector – Kano, Kaduna, Katsina, Zamfara, Kwara, Gombe and Oyo. 
+						</p>	
+						<p>Nigerian farmers may now use receipts for their produce as collateral for loans. This will control price volatility due to the availability of buffer stock, enabling farmers to sell produce at better price points.
+						- See more at: http://www.nigeriacommunicationsweek.com.ng/e-business/african-exchange-holdings-delivers-on-receipts-system#sthash.wJOz0Eae.dpuf
+						</p>
+					</div><!--End of span9-->
+				</div><!--ENd of mini div containing sidebar-->
+					<div>
+						<p>
+							Commenting to the media, Tim Shortley, chief operating officer, AFEX, said, “The timing for the project is ideal because trading and storing of harvested commodities just started and the system is ready. We have launched the system in the northwest region of Nigeria; however, we plan to scale across other states in 2014 so farmers across Nigeria can feel the benefits of the warehousing project. We hope that agricultural commodities in excess of N10 billion will be financed this season.”
+						</p>
+					</div>
+				</div><!--End of story-->
+	    </div>
+
+
+	        <div style="margin-top: 60px"> 
+				<div style="border:1px solid #c5c5c5;" >
+                                    <div id="mynavbar2" >
+                                        <ul class="unstyled inline">
+                                                
+                                                <li><a href="#">News </a></li>
+                                                <li><a href="#">Entertainment</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Business</a></li>
+                                                <li><a href="#">More<b class="caret"></b></a></li>
+                                        </ul>
+                                        
+                                    </div>
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/lamido.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Worries over Arrests of Top Bankers for Alleged Terrorist Financing -</a>
+                                                <p>The banking industry and State Security Service (SSS) are embroiled in claims and denials over the continued detention of senior personnel of 13 Nigerian banks for alleged terrorist financing and -.<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/yemi.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">World Bank Pledges Support to Nigeria Data System </a>
+                                                <p> Alain Gaugris, a Senior Statistician, World Bank, has expressed the commitment of the Bank to supporting and positioning Nigerian Statistical System (NSS) to enable it contribute meaningfully to the national Transformation Agenda....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+                                   <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+									
+									<div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+		  								
+                                   <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/samsung.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Samsung Africa Targets 20m Smartphone Sales in 2014 -</a>
+                                                <p> Samsung Electronics one of the leading Smartphone manufacturers, has disclosed plans to supply half of the estimated 20 million smartphones to be sold on the continent this year with the intention of doubling sales in 2014....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+
+                              				<div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/goni.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">FG Tasks Civil Servants on ICT</a>
+                                                <p> Federal government has urged civil servants in the country to acquire Information and Communication Technology (ICT) skills....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>  
+
+                                   <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/jega.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Oppositions Ask FG to Account for Missing $5Bn.</a>
+                                                <p> Opposition parties have challenged the federal government to account for the $5 billion, which has reportedly disappeared from the nation’s Excess Crude Account (ECA) ....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>   
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                    </div>
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/omobola.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Nigeria Must Learn Communicate with Technology...Madojemu</a>
+                                                <p> Francis Madojemu, the head of Nigeria’s iBridgeHub and initiator of iCODE has called for a shift in the technology paradigm in Africa. According to him, the continent needs to understand how to speak the language of technology and not just remain consumers of products made elsewhere....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>   
+
+                              		<div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/goni.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">FG Tasks Civil Servants on ICT</a>
+                                                <p> Federal government has urged civil servants in the country to acquire Information and Communication Technology (ICT) skills....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div> 
+
+                                    <div class="newsbar" >
+                                                
+                                                    <div class="span2 pull-left">
+                                                        <a href="#k"><img src="img/tyler_5.jpg" width="100" height="300"></a>  
+                                                    </div>     
+                                                
+                                                    
+                                                <div class="k">
+                                                <a href="#k">Aviation Industry IT Security Spending since 9/11 Hits $100Bn</a>
+                                                <p>Aviation industry’s susceptibility to cyber threats has been on the increase, despite some $ 100 billion spent on cyber security since 9/11, according to International Air Transport Association (IATA)....<a href="#k">Read more</a> </p>
+                                                </div> 
+
+                                             
+                                    </div>   
+ 
+                </div> 
+            </div>
+
+    </div>
+					
+	
+	
+                   
+
+
+					<div class="span3  hidden-phone hidden-tablet">
+							<div class="row-fluid">
+
+									 				<div  class="work1">
+			                                               <div class="lastheader"> Trending now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>Watch Videos</a> </div>
+			                                                <ol>
+			                                                    <li><span class="bld"><a href="#">Goats</a></span></li>
+			                                                    <li><span class="bld"><a href="#">Sheep</a></span></li>
+			                                                    <li><span class="bld"><a href="#">Cow</a></li>
+			                                                    <li><span class="bld"><a href="#">Tiger</a></span></li> 
+			                                                    <li><span class="bld"><a href="#">Goats</a></span></li>
+			                                                    <li><span class="bld"><a href="#">Lion</a></span></li>
+			                                                </ol>
+			                                        </div>
+			                                        <!--End of Trending-->
+			                <div class="work2">
+			                   <img src="img/dna.jpg">
+			                </div>
+
+											<div class="work1">
+												<div>
+	                                              <h4 style="font-weight:bolder"> Lagos<img src="img/map2.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/cloud3.jpg"></h4>
+	                                                                                          
+		                                                                               
+		                                             <span style="font-size:35px;">88
+		                                              <span style="font-size:25px;"> <sup> <sup>o</sup>F &nbsp;&nbsp; Partly cloudy</sup>
+
+		                                              </span>
+		                                             </span> 
+	                                         	</div>
+                                    			
+                                    			 
+	                                               <table width="100" id="bd">
+	                                                <tr>
+	                                                    <td width="50"><img src="img/cloud.jpg" height="40" width="46"></td>
+	                                                    <td width="20"><img src="img/cloud.jpg" height="40" width="47"></td>
+	                                                    <td width="20"><img src="img/cloud.jpg" height="45" width="41"></td>
+	                                                </tr>
+
+	                                                <tr>
+	                                                    <td>Today</td>
+	                                                    <td>Tomorrow</td>
+	                                                    <td>Monday</td>
+	                                                </tr>
+
+	                                                <tr>
+	                                                <td>21<sup>o</sup>F</td>
+	                                                <td>21<sup>o</sup>F</td>
+	                                                <td>21<sup>o</sup>F</td>
+	                                                </tr>
+                                   			  </table>
+                                      			
+
+                                    		</div><!--End of Weather-->
+
+                                    		<div class="work1">
+                                                 <div class="lastheader" style="font-weight:bolder; font-size:16px;"> Quotes <a href="#"> Finance</a></div>
+                                                  <div></div>
+                                                  <div></div>
+                                                  <div>
+                                                  <table>
+                                                      <tr>
+                                                        <td width="125"><a href="#">S&P 500</a></td>
+                                                        <td width="71">1,000.342</td>
+                                                        <td width="71"><a href="#">7.2% </a> </td>
+                                                      </tr>  
+
+                                                       <tr>
+                                                        <td width="125"><a href="#">NASDQ</a></td>
+                                                        <td width="71">1,765.472</td>
+                                                        <td width="71"><a href="#">3.9%</a></td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td width="125"><a href="#">Transcorp</a></td>
+                                                        <td width="71">2,768.657</td>
+                                                        <td width="71"><a href="#">1.7% </a> </td>
+                                                      </tr> 
+
+                                                      <tr>
+                                                        <td width="125"><a href="#">HDS GROUP</a></td>
+                                                        <td width="71">1,000.342</td>
+                                                        <td width="71"><a href="#">7.2% </a> </td>
+                                                      </tr>   
+                                                  </table>
+                                                  	<div>&nbsp;</div>
+
+                                                  <input type="text" placeholder="Enter Company/ticker" style="width:90%">
+                                                  </div>
+                                            </div><!--End of Finanace-->
+
+                                    <div class="work1">
+                                    	<div class="span12">
+                                    	  <div class="row-fluid">
+                                            <div class="lastheader"> <b style="font-size: 15px;">SPORTS </b> <a href="#"> Yahoo! Sports</a>
+                                            </div>
+                                                                                       
+                                            <div class="sports"> 
+                                             	<div class="span4">NBA</div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-right:5px;"><a href="#"><img src="img/manu (Custom).png"></a></div>
+                                             	<div class="span1 pull-left" id="scores" style="margin-left:0"><a href="#"> SAC &nbsp;&nbsp;&nbsp;&nbsp;91</a></div>
+                                             		<div class="span1">&nbsp;</div>
+                                             	<div class="span1" id="scores"><a href="#">POR 104</a></div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-left:15px;"> <a href="#"><img src="img/manu (Custom).png"></a></div> 
+                                            	                                            	 
+                                            </div>
+                                            
+                                            <div class="sports"> 
+                                             	<div class="span4">NBA</div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-right:5px;"><a href="#"><img src="img/arsenal.jpg"></a></div>
+                                             	<div class="span1 pull-left" id="scores" style="margin-left:0"><a href="#"> DEN &nbsp;&nbsp;&nbsp;&nbsp;103</a></div>
+                                             		<div class="span1">&nbsp;</div>
+                                             	<div class="span1" id="scores"><a href="#">PHO 114</a></div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:35px; margin-left:15px;"> <a href="#"><img src="img/chelsea.jpg"></a></div> 
+                                            	                                            	 
+                                            </div>
+
+                                            <div class="sports"> 
+                                             	<div class="span4">NFL</div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-right:5px;"><a href="#"><img src="img/manu (Custom).png"></a></div>
+                                             	<div class="span1 pull-left" id="scores" style="margin-left:0"><a href="#"> WAS &nbsp;&nbsp;&nbsp;&nbsp;27</a></div>
+                                             		<div class="span1"></div>
+                                             	<div class="span1" id="scores"><a href="#">MIN 34</a></div>
+                                             	<div class="span2" style="text-align:center; width:30px; height:30px; margin-left:15px;"> <a href="#"><img src="img/manu (Custom).png"></a></div> 
+                                            	                                            	 
+                                            </div>
+
+
+                                            <!--Those to be underlined-->
+                                     	  </div>
+                                     	</div>
+                                    </div>
+                                            
+
+
+                                    <!--        <div class="work2">
+                                                 <span class="lastheader"><b style="font-size: 15px;">SPORTS </b> <a href="#"> Yahoo! Sports</a>
+                                                 </span>
+                                                  <div>&nbsp;</div>
+                                                  <div>&nbsp;</div>
+                                                  <div>
+                                                  <table class="table table-condensed">
+                                                      <tr>
+                                                        <td width="90"><h5><a href="#">Premiership</a> </h5></td>
+                                                        
+                                                       <td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr>  
+
+                                                       <tr>
+	                                                        <td width="90"><h5><a href="#">LA LIGA</a></h5></td>
+	                                                        
+	                                                         <td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr>
+
+                                                      <tr>
+                                                        <td width="90"><h5><a href="#">Champions League</a></h5></td>
+                                                        
+                                                         <td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr> 
+
+                                                      <tr>
+                                                        <td width="90"><h5><a href="#">Bungdelisa</a></h5></td>
+                                                        
+                                                        	<td width="120">
+	                                                         	<div><a href="#">Madrid <img src="img/dbcty.jpg"></a><span class="pull-right">2</span></div>
+	                                                         </td>
+	                                                        <td width="2">
+	                                                        	<div>-</div>
+	                                                        </td>
+	                                                        <td width="120">
+	                                                        	<div>3 &nbsp;<a href="#"><img src="img/ars.jpg">Mallorca</a></div>
+	                                                         </td>
+                                                      </tr>   
+                                                  </table>                                                  
+                                                  </div>
+                                                </div><!--End of Sports -->
+                                     
+
+                                                <div class="work2">
+	                                            <h5 class="lastheader">Featured Videos<b class="xz"><a href="#"> 
+	                                            	From Youtube,Vclip,etc</a></b>
+	                                            </h5>
+	                                        <div>
+													
+													<table id="table2">	                                           
+			                                        <tr> 
+			                                           <td width="100">
+				                                           	<div ><video width="150" height="90" controls><source src="img/vid1.jpg" ></video>
+								                            </div>
+								                            <div><a href="#" class="vidtext" > Watch 
+								                            </a>
+								                            </div>
+			                                           	</td>
+			                                            <td width="100">
+                                                           <div ><video width="150" height="90" controls><source src="img/vid1.jpg" ></video>
+                                                            </div>
+                                                            <div><a href="#" class="vidtext" > Watch 
+                                                            </a>
+                                                            </div>
+                                                        </td>
+			                                        </tr>
+			                                        
+			                                        <tr >	                                           
+				                                          <td width="100">
+                                                            <div ><video width="150" height="90" controls><source src="vid.3pg" type="video/3gp" ></video>
+                                                            </div>
+                                                            <div><a href="#" class="vidtext" > Watch 
+                                                            </a>
+                                                            </div>
+                                                        </td>
+				                                         <td width="100">
+                                                            <div ><video width="150" height="90" controls><source src="img/vid1.jpg" ></video>
+                                                            </div>
+                                                            <div><a href="#" class="vidtext" > Watch 
+                                                            </a>
+                                                            </div>
+                                                        </td>
+			                                        </tr>
+			                       					<input type="text" placeholder="Search Video">
+			                                   </table>
+			                                </div><!--End of videoitem list-->
+                                            	
+                                        </div>
+
+                                                 <div class="work">
+                                                	<img src="img/gtb3.jpg">
+                                            	</div>
+                                                                          
+                                        
+                                            <div>
+                                                <img src="img/DATA-CENTRE-ad-2x.jpg">
+                                            </div>
+                                    
+
+						
+							</div><!-- End of row-fluid-->
+				
+			</div><!--End of Span3 -->
+
+</div><!--End of boy content-->
+</div><!--Everything-->	
+
+
+
+</body>
+</html>
